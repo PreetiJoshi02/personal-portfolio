@@ -58,6 +58,31 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    title: "AI-Based Log Anomaly Detection",
+    subtitle: "Machine Learning System for Windows Event Log Analysis",
+    description:
+      "A machine learning-based system for detecting anomalous patterns in Windows event logs using Isolation Forest. Includes automated log collection, preprocessing, anomaly classification, MongoDB integration, and a Flask-based dashboard for log monitoring and visualization.",
+    longDescription: `An intelligent security monitoring system that leverages machine learning to automatically detect anomalous patterns in Windows event logs, enabling proactive threat identification and system health monitoring.
+
+Key features include:
+• Automated Windows event log collection and preprocessing pipeline
+• Anomaly detection using Isolation Forest algorithm
+• Real-time anomaly classification and severity scoring
+• MongoDB integration for persistent log storage and querying
+• Flask-based interactive dashboard for log monitoring
+• Data visualization with Chart.js for anomaly trends
+• RESTful API for log ingestion and results retrieval
+• Pandas & NumPy powered feature engineering pipeline`,
+    technologies: ["Python", "Flask", "Machine Learning", "Isolation Forest", "Pandas", "NumPy", "MongoDB", "HTML", "CSS", "JavaScript", "Chart.js"],
+    github: "https://github.com/PreetiJoshi02/AI-BASED-LOG-ANAMOLY-DETECTION.git",
+    live: "https://loganomalysystem.vercel.app/",
+    category: "ML / Security",
+    featured: true,
+    icon: "🔍",
+    color: "from-violet-500 to-purple-600",
+  },
+  {
+    id: 2,
     title: "Stayora",
     subtitle: "Full Stack Property Booking Web Application",
     description:
@@ -74,14 +99,14 @@ Key features include:
 • RESTful API architecture`,
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Bootstrap", "EJS", "Passport.js"],
     github: "#", // Placeholder - update with actual GitHub URL
-    live: null, // No live demo available
+    live: null,
     category: "Full Stack",
-    featured: true,
+    featured: false,
     icon: "🏨",
     color: "from-purple-500 to-blue-600",
   },
   {
-    id: 2,
+    id: 3,
     title: "WeatherPulse",
     subtitle: "Real-time Weather Forecast Application",
     description:
@@ -98,35 +123,11 @@ Key features include:
 • Clean, modern UI with intuitive UX`,
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Bootstrap", "OpenWeather API"],
     github: "#", // Placeholder - update with actual GitHub URL
-    live: "https://weather-pulse-roan-ten.vercel.app/",
+    live: "https://weather-pulse-roan-ten.vercel.app/#forecast-section",
     category: "Web App",
-    featured: true,
+    featured: false,
     icon: "🌦️",
     color: "from-blue-500 to-cyan-500",
-  },
-  {
-    id: 3,
-    title: "Encrypted Traffic Threat Detector",
-    subtitle: "Network Security & Machine Learning System",
-    description:
-      "A threat detection system for encrypted network traffic using metadata analysis and machine learning. Captures network packets with Wireshark and Scapy, extracts features, and classifies traffic as normal or threat using Logistic Regression.",
-    longDescription: `An advanced network security system that detects threats within encrypted network traffic using metadata analysis and machine learning techniques.
-
-Key features include:
-• Network packet capture using Wireshark and Scapy
-• Metadata-based feature extraction from encrypted traffic
-• Machine learning classification (Logistic Regression)
-• Flask web application for real-time threat classification
-• Normal vs. threat traffic categorization
-• Traffic analysis without decryption
-• Scikit-learn powered ML pipeline`,
-    technologies: ["Python", "Flask", "Scapy", "Wireshark", "Scikit-learn"],
-    github: "#", // Placeholder - update with actual GitHub URL
-    live: null,
-    category: "ML / Security",
-    featured: true,
-    icon: "🔐",
-    color: "from-green-500 to-emerald-600",
   },
 ];
 

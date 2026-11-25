@@ -208,7 +208,7 @@ export default function Projects() {
           transition={{ delay: 0.4 }}
           className="text-center text-slate-600 text-sm mt-10"
         >
-          GitHub links and additional projects will be added soon. Contact me for more details.
+          More projects coming soon. Feel free to reach out or explore my GitHub for the latest work.
         </motion.p>
       </div>
     </SectionWrapper>

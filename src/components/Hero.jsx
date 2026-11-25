@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import HeroNetwork from './HeroNetwork'
 import { FiGithub, FiLinkedin, FiArrowDown, FiDownload, FiMail } from 'react-icons/fi'
 import { personalInfo } from '../data/portfolioData'
 
@@ -39,12 +40,36 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
-      {/* Background elements */}
+      {/* ── Background Visual Layer ── */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Large ambient glows */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/3 rounded-full blur-[160px]" />
+
+        {/* Digital network visualization */}
+        <HeroNetwork />
+
+        {/* Large ambient glows — enhanced with blue/indigo tones */}
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full blur-[130px]"
+          style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.09) 0%, transparent 70%)' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[110px]"
+          style={{ background: 'radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%)' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-[180px]"
+          style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.045) 0%, transparent 65%)', animation: 'headingGlow 8s ease-in-out infinite' }} />
+
+        {/* Blue-to-indigo glow crown behind main heading area */}
+        <div
+          className="absolute rounded-full"
+          style={{
+            width: '480px', height: '280px',
+            top: '18%', left: '50%',
+            transform: 'translateX(-58%)',
+            background: 'radial-gradient(ellipse, rgba(99,102,241,0.13) 0%, rgba(59,130,246,0.07) 40%, transparent 75%)',
+            filter: 'blur(32px)',
+            animation: 'headingGlow 6s ease-in-out infinite',
+          }}
+        />
+
+        {/* Cyan accent bottom-right */}
+        <div className="absolute bottom-1/3 right-1/5 w-72 h-72 rounded-full blur-[90px]"
+          style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.055) 0%, transparent 70%)' }} />
 
         {/* Floating code snippets */}
         {codeSnippets.map((snippet, i) => (
@@ -56,7 +81,8 @@ export default function Hero() {
             className="absolute hidden xl:block"
             style={{ top: snippet.top, left: snippet.left, right: snippet.right, bottom: snippet.bottom }}
           >
-            <div className="glass-card px-3 py-1.5 text-xs text-purple-400/70 font-mono border-purple-500/20">
+            <div className="glass-card px-3 py-1.5 text-xs text-indigo-400/70 font-mono"
+              style={{ borderColor: 'rgba(99,102,241,0.2)' }}>
               {snippet.code}
             </div>
           </motion.div>

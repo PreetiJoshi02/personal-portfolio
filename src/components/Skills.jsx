@@ -4,7 +4,8 @@ import {
 } from 'react-icons/fa'
 import {
   SiJavascript, SiBootstrap, SiExpress, SiMongodb, SiMysql,
-  SiEclipseide, SiC,
+  SiEclipseide, SiC, SiFlask, SiChartdotjs, SiScikitlearn,
+  SiPandas, SiNumpy, SiVercel,
 } from 'react-icons/si'
 import { VscVscode } from 'react-icons/vsc'
 import { MdPsychology, MdAutoAwesome, MdPeople } from 'react-icons/md'
@@ -19,14 +20,22 @@ const iconMap = {
   FaCss3Alt: <FaCss3Alt />,
   SiJavascript: <SiJavascript />,
   SiBootstrap: <SiBootstrap />,
+  SiChartdotjs: <SiChartdotjs />,
   FaNodeJs: <FaNodeJs />,
   SiExpress: <SiExpress />,
+  SiFlask: <SiFlask />,
   SiMongodb: <SiMongodb />,
   SiMysql: <SiMysql />,
+  SiEjs: <span className="font-bold text-sm">EJS</span>,
+  SiPassport: <span className="font-bold text-sm">🛂</span>,
+  SiScikitlearn: <SiScikitlearn />,
+  SiPandas: <SiPandas />,
+  SiNumpy: <SiNumpy />,
   FaGit: <FaGitAlt />,
   FaGithub: <FaGithub />,
   SiVisualstudiocode: <VscVscode />,
   SiEclipseide: <SiEclipseide />,
+  SiVercel: <SiVercel />,
   MdPsychology: <MdPsychology />,
   MdAutoAwesome: <MdAutoAwesome />,
   MdPeople: <MdPeople />,
@@ -74,8 +83,18 @@ const categories = [
     items: skills.databases,
   },
   {
+    id: 'frameworks',
+    label: 'Frameworks & Libraries',
+    color: 'emerald',
+    accent: '#10b981',
+    bg: 'bg-emerald-500/10',
+    border: 'border-emerald-500/20',
+    text: 'text-emerald-400',
+    items: skills.frameworks,
+  },
+  {
     id: 'tools',
-    label: 'Tools',
+    label: 'Developer Tools',
     color: 'orange',
     accent: '#f97316',
     bg: 'bg-orange-500/10',

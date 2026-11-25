@@ -25,28 +25,38 @@ I'm driven by curiosity, a love for problem-solving, and the satisfaction of tur
 export const skills = {
   languages: [
     { name: "Java", icon: "FaJava" },
-    { name: "C", icon: "SiC" },
     { name: "Python", icon: "FaPython" },
+    { name: "C", icon: "SiC" },
+    { name: "JavaScript", icon: "SiJavascript" },
   ],
   frontend: [
     { name: "HTML5", icon: "FaHtml5" },
     { name: "CSS3", icon: "FaCss3Alt" },
-    { name: "JavaScript", icon: "SiJavascript" },
     { name: "Bootstrap", icon: "SiBootstrap" },
+    { name: "Chart.js", icon: "SiChartdotjs" },
   ],
   backend: [
     { name: "Node.js", icon: "FaNodeJs" },
     { name: "Express.js", icon: "SiExpress" },
+    { name: "Flask", icon: "SiFlask" },
   ],
   databases: [
-    { name: "MongoDB", icon: "SiMongodb" },
     { name: "MySQL", icon: "SiMysql" },
+    { name: "MongoDB", icon: "SiMongodb" },
+  ],
+  frameworks: [
+    { name: "EJS", icon: "SiEjs" },
+    { name: "Passport.js", icon: "SiPassport" },
+    { name: "Scikit-learn", icon: "SiScikitlearn" },
+    { name: "Pandas", icon: "SiPandas" },
+    { name: "NumPy", icon: "SiNumpy" },
   ],
   tools: [
     { name: "Git", icon: "FaGit" },
     { name: "GitHub", icon: "FaGithub" },
     { name: "VS Code", icon: "SiVisualstudiocode" },
     { name: "Eclipse", icon: "SiEclipseide" },
+    { name: "Vercel", icon: "SiVercel" },
   ],
   softSkills: [
     { name: "Problem Solving", icon: "MdPsychology" },
@@ -86,20 +96,21 @@ Key features include:
     title: "Stayora",
     subtitle: "Full Stack Property Booking Web Application",
     description:
-      "Developed a full-stack property listing and booking web application with user authentication, role-based access control, and booking management. Features server-side data validation and a user-friendly property browsing interface.",
-    longDescription: `Stayora is a comprehensive full-stack property listing and booking platform built with the MERN-like stack. The application enables users to browse properties, make bookings, and manage their reservations seamlessly.
+      "A full-stack property booking platform featuring user authentication, role-based access control, CRUD operations, property listings, booking management, and server-side validation. Built with the MVC architecture using Node.js, Express.js, MongoDB, and EJS.",
+    longDescription: `Stayora is a comprehensive full-stack property listing and booking platform built with the MVC architecture. The application enables users to browse properties, make bookings, and manage their reservations seamlessly.
 
 Key features include:
 • User authentication and authorization with Passport.js
 • Role-based access control (host/guest roles)
+• Full CRUD operations for property listings and bookings
 • Complete booking management system
 • Server-side data validation and error handling
 • Responsive property browsing interface
-• Image upload and management
+• Image upload and management via Cloudinary
 • RESTful API architecture`,
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Bootstrap", "EJS", "Passport.js"],
-    github: "#", // Placeholder - update with actual GitHub URL
-    live: null,
+    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "MongoDB", "EJS", "Bootstrap", "Passport.js", "REST APIs"],
+    github: "https://github.com/PreetiJoshi02/Stayora.git",
+    live: "https://stayora-six.vercel.app/listings",
     category: "Full Stack",
     featured: false,
     icon: "🏨",
